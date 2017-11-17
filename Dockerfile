@@ -9,5 +9,5 @@ WORKDIR $WORKSPACE
 RUN git clone --depth=1 https://github.com/kontotto/rosecheckers \
   && cd $ROSECHK \
   && make -j $(nproc) pgms \
-  && mv rosecheckers /usr/local/bin
+  && mv rosecheckers /usr/local/bin \
   && rm -rf $WORKSPACE
